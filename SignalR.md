@@ -2,6 +2,7 @@ SignalR
 =====
 What is it?
 -----------
+Test commit so that I know I can propose changes.
 
 How to use it?
 --------------
