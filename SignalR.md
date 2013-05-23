@@ -28,7 +28,10 @@ Each user has their own unique hub identified by a ConnectionId, but SignalR has
 Developers can also access the server-side hub from anywhere in their code by retrieving the hub context. WIth the hub 
 context, developers can push content to clients from anywhere in their code.
 
-Originally it was a personal project of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
+Originally it was a personal projects of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
+
+![Asp.net stack] (./files/aspnet_stack.png)
+<img src="./files/aspnet_stack.png" alt="Asp.net stack" height="115" width="700">
 
 
 Examples
