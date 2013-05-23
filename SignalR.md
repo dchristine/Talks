@@ -18,6 +18,11 @@ If one user were to perform a transaction in the database through server-side co
 screen until they refreshed their browser window. With SignalR, after the database transformation is complete the updated content can be 
 pushed up to each user currently on the application so they can see the changes right as they happened.
 
+Originally it was a personal projects of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
+
+<img src="./files/aspnet_stack.png" alt="Asp.net stack" height="115" width="700">
+
+
 How to use it?
 --------------
 SignalR requires a hub that is setup on both the client-side javascript and server-side code. The hub connection is started on
@@ -27,10 +32,6 @@ class name matches the client-side hub name, communication between the client an
 Each user has their own unique hub identified by a ConnectionId, but SignalR has access to all hubs currently connected to the application.<br />
 Developers can also access the server-side hub from anywhere in their code by retrieving the hub context. WIth the hub 
 context, developers can push content to clients from anywhere in their code.
-
-Originally it was a personal projects of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
-
-<img src="./files/aspnet_stack.png" alt="Asp.net stack" height="115" width="700">
 
 
 Examples
