@@ -29,8 +29,9 @@ Demo
 [Quality Bank] (https://github.com/ResourceDataInc/QualityBank)<br />
 [Scrumtools on Intranet] (https://github.com/ResourceDataInc/Intranet)
 
-Resource
+Resources
 --------
 [ASP.NET](http://www.asp.net/signalr) <br />
 [Scott Hanselman] (http://www.hanselman.com/blog/AsynchronousScalableWebApplicationsWithRealtimePersistentLongrunningConnectionsWithSignalR.aspx) <br />
-[Mira Javora Blog Quick Chat App] (http://blog.mirajavora.com/signalr-introduction-to-signalr-quick-chat-app)
+[Mira Javora Blog Quick Chat App] (http://blog.mirajavora.com/signalr-introduction-to-signalr-quick-chat-app)<br />
+[SignalR book] (./files/SignalR Book - JM Aguilar - campusMVP.net.pdf)
