@@ -2,6 +2,15 @@ SignalR
 =====
 What is it?
 -----------
+We are often faced with the scenarios where the server need to initiante the push. What's being used?
+* __Polling__: It's easy to implement and it's universal since it uses
+standard features of HTTP.  However, it's still the Pull model, and it lacks immediacy.
+* __Long polling__: Similar to Polling, but the connections remains open until the server has something to notify or a timeout occurs.
+* __Forever frame__: It uses HTML <iframe> tag to obtain a permanently open connection.  This technique uses HTML, JavaScript, and HTTP.  
+No time is wasted in connectino and disconnectin processses. Timeouts, proxies and firewalls are problematic. Responses would accumulate in iframe in client memory that could result in taking up too much RAM.
+
+####SignalR arrives at the scene####
+
 SignalR is an ASP.NET library that allows developers to add real-time web functionality to their applications.<br />
 Real-time web functionality is essentially pushing server-side content to the client as it happens (thus "real-time").<br />
 Example: Two users are viewing the same screen in an application. Some of the data that is presented to the client is stored in a database.
@@ -18,6 +27,9 @@ class name matches the client-side hub name, communication between the client an
 Each user has their own unique hub identified by a ConnectionId, but SignalR has access to all hubs currently connected to the application.<br />
 Developers can also access the server-side hub from anywhere in their code by retrieving the hub context. WIth the hub 
 context, developers can push content to clients from anywhere in their code.
+
+Originally it was a personal project of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
+
 
 Examples
 --------
