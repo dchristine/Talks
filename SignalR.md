@@ -22,6 +22,11 @@ Originally it was a personal projects of David Fowler and Damian Edwards, member
 
 <img src="./files/aspnet_stack.png" alt="Asp.net stack" height="115" width="700">
 
+SignalR includes a set of transports—or techniques to keep the underlying connection to the server open—“as standard”,
+and it determines which one it should use based on certain factors, such as the availability of the technology at both 
+ends. __SignalR will always try to use the most efficient transport__, and will keep falling back until it finds one that 
+is compatible with the context.  
+<img src="./files/signalR_connection.png" alt="Asp.net stack" height="200" width="750">
 
 How to use it?
 --------------
