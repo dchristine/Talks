@@ -2,12 +2,12 @@ SignalR
 =====
 What is it?
 -----------
-We are often faced with the scenarios where the server need to initiante the push. What's being used?
+We are often faced with scenarios where the server needs to initiate the push. What's being used?
 * __Polling__: It's easy to implement and it's universal since it uses
-standard features of HTTP.  However, it's still the Pull model, and it lacks immediacy.
+standard features of HTTP.  However, it's still the Pull model, and it lacks an immediate response.
 * __Long polling__: Similar to Polling, but the connections remains open until the server has something to notify or a timeout occurs.
-* __Forever frame__: It uses HTML <iframe> tag to obtain a permanently open connection.  This technique uses HTML, JavaScript, and HTTP.  
-No time is wasted in connectino and disconnectin processses. Timeouts, proxies and firewalls are problematic. Responses would accumulate in iframe in client memory that could result in taking up too much RAM.
+* __Forever frame__: It uses an HTML <iframe> tag to obtain a permanently open connection.  This technique uses HTML, JavaScript, and HTTP.  
+No time is wasted in the connection and disconnection processes. Timeouts, proxies and firewalls are problematic. Responses would accumulate in the iframe in client memory that could result in too much RAM usage.
 
 ####SignalR arrives at the scene####
 
@@ -18,12 +18,12 @@ If one user were to perform a transaction in the database through server-side co
 screen until they refreshed their browser window. With SignalR, after the database transformation is complete the updated content can be 
 pushed up to each user currently on the application so they can see the changes right as they happened.
 
-Originally it was a personal projects of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
+Originally it was a personal project of David Fowler and Damian Edwards, members of the ASP.NET team at Microsoft, but it is now an officially integrated product in the stack of Web technologies.
 
 <img src="./files/aspnet_stack.png" alt="Asp.net stack" height="115" width="700">
 
-SignalR includes a set of transports—or techniques to keep the underlying connection to the server open—“as standard”,
-and it determines which one it should use based on certain factors, such as the availability of the technology at both 
+SignalR includes a set of transports (or techniques) to keep the underlying connection to the server open—“as standard”.
+It determines which transport it should use based on certain factors, such as the availability of the technology at both 
 ends. __SignalR will always try to use the most efficient transport__, and will keep falling back until it finds one that 
 is compatible with the context.  
 <img src="./files/signalR_connection.png" alt="Asp.net stack" height="200" width="750">
